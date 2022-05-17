@@ -7,6 +7,12 @@ module.exports = {
         secondary: "var(--c-secondary)",
         sidebar: "var(--c-sidebar)",
         icon: "var(--c-icon)",
+        textColor: "var(----c-textColor)",
+      },
+      fontFamily: {
+        helvetica: ["Helvetica Neue"],
+        laBelle: ["La Belle Aurore"],
+        coolvetica: ["Coolvetica"],
       },
     },
   },

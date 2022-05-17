@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/images/logo-s.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -9,31 +10,56 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Sidebar = () => {
   return (
-    <div className="bg-sidebar w-24  h-full absolute top-0 z-10 flex flex-col justify-center">
-      <nav className="flex flex-col gap-6 items-center">
-        <NavLink exact="true" activeClassName="selected" to="/">
+    <div className="bg-sidebar w-24  h-full absolute top-0 z-10 flex flex-col items-center">
+      <Link to="/">
+        <div className="">
+          <img src={Logo} alt="logo" className="w-10 mt-8 mx-auto" />
+          <h1 className="text-white font-bold text-xl text-left mt-1">
+            Sushant
+          </h1>
+        </div>
+      </Link>
+      <nav className="mt-72 flex flex-col gap-8 items-center">
+        <NavLink
+          exact="true"
+          activeclassname="selected"
+          to="/"
+          style={({ isActive }) => ({
+            color: isActive ? "var(--c-secondary)" : "var(--c-icon)",
+          })}
+        >
           <FontAwesomeIcon
             icon={faHome}
             size="2x"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "red",
-            }}
-            className="text-icon active:text-secondary"
+            className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
           />
         </NavLink>
-        <NavLink exact="true" activeClassName="selected" to="/about">
+        <NavLink
+          exact="true"
+          activeclassname="selected"
+          to="/about"
+          style={({ isActive }) => ({
+            color: isActive ? "var(--c-secondary)" : "var(--c-icon)",
+          })}
+        >
           <FontAwesomeIcon
             icon={faUser}
             size="2x"
-            className="text-icon active:text-secondary"
+            className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
           />
         </NavLink>
-        <NavLink exact="true" activeClassName="selected" to="/contact">
+        <NavLink
+          exact="true"
+          activeclassname="selected"
+          to="/contact"
+          style={({ isActive }) => ({
+            color: isActive ? "var(--c-secondary)" : "var(--c-icon)",
+          })}
+        >
           <FontAwesomeIcon
             icon={faEnvelope}
             size="2x"
-            className="text-icon active:text-secondary"
+            className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
           />
         </NavLink>
         <ul className="flex flex-col gap-4 items-center absolute bottom-16">

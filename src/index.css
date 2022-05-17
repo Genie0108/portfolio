@@ -9,10 +9,10 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 "Helvetica Neue", sans-serif;
-  color: #444;
+  color: var(--c-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
+  background: var(--c-primary);
   overflow: hidden;
   display: block;
 }
@@ -22,4 +22,12 @@ body {
   --c-secondary: #ffd700;
   --c-sidebar: #181818;
   --c-icon: #4d4d4e;
+  --c-textColor: #444;
 }
+/* :root {
+  --c-primary: #ebd877;
+  --c-secondary: #ac4b1c;
+  --c-sidebar: #f39d48;
+  --c-icon: #fcd88f;
+  --c-textColor: #444;
+} */
