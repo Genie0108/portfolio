@@ -1,0 +1,56 @@
+.homePage h1::before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: var(--c-secondary);
+  font-size: 22px;
+  position: absolute;
+  margin-top: -40px;
+  left: -15px;
+  opacity: 0.6;
+}
+.homePage h1::after {
+  content: "<h1/>";
+  font-family: "La Belle Aurore", cursive;
+  color: var(--c-secondary);
+  font-size: 22px;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 20px;
+  animation: fadeIn 1s 1.7s backwards;
+  opacity: 0.6;
+}
+.homePage img {
+  margin-left: 20px;
+  opacity: 0;
+  width: 32px;
+  height: auto;
+  animation: rotateIn 500ms linear both;
+  animation-delay: 1.4s;
+}
+.homePage h2 {
+  color: var(--c-lightGrey);
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  animation: fadeIn 500ms 1.8s backwards;
+}
+.flatButton {
+  color: var(--c-secondary);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid var(--c-secondary);
+  margin-top: 25px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+}
+.flatButton:hover {
+  background: var(--c-secondary);
+  color: var(--c-textColor);
+}

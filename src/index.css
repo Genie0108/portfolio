@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 "Helvetica Neue", sans-serif;
-  color: var(--c-text);
+  color: var(--c-textColor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--c-primary);
@@ -23,6 +23,7 @@ body {
   --c-sidebar: #181818;
   --c-icon: #4d4d4e;
   --c-textColor: #444;
+  --c-lightGrey: #8d8d8d;
 }
 /* :root {
   --c-primary: #ebd877;

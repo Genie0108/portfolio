@@ -8,6 +8,7 @@ module.exports = {
         sidebar: "var(--c-sidebar)",
         icon: "var(--c-icon)",
         textColor: "var(----c-textColor)",
+        lightGrey: "var(--c-lightGrey)",
       },
       fontFamily: {
         helvetica: ["Helvetica Neue"],
