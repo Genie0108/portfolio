@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
+import Logo from "./Logo/Logo";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("textAnimate");
@@ -59,6 +60,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };
