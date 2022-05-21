@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 import "./about.css";
 import AniamtedLetters from "../../components/AnimatedLetters/AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3,
+  faJsSquare,
+  faReact,
+  faGitAlt,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("textAnimate");
@@ -11,6 +20,7 @@ const About = () => {
   }, []);
   return (
     <div className="aboutPage">
+      {/* details section */}
       <div className="absolute left-[10%] top-[30%] -translate[50%] w-[35%]  table-cell align-middle max-h-[90%]">
         <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
           <AniamtedLetters
@@ -34,7 +44,29 @@ const About = () => {
         </div>
       </div>
       <div>
-        <div></div>
+        {/* cube section */}
+        <div className="cubeContainer">
+          <div className="cubeSpinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faGithub} color="#000" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
