@@ -35,11 +35,14 @@ const About = () => {
             businesses bring their ideas to life through my design and
             development expertise.
           </p>
-          <p>I'm experienced in HTML, CSS 3, Tailwind CSS, and React JS.</p>
           <p>
-            I'm very ambitious Front End Developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            Well-organised person, problem solver, independent employee with
+            high attention to detail.Fan of MCU, outdoor activities, and English
+            series.
+          </p>
+          <p>
+            Interested in the frontend spectrum and working on ambitious
+            projects with positive people.
           </p>
         </div>
       </div>
