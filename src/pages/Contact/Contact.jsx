@@ -33,6 +33,8 @@ const Contact = () => {
         }
       );
   };
+  // latitude and longitude of Chabahil
+  const position = [27.7166, 85.345];
   return (
     <div className="container contactPage">
       <div className="absolute left-[10%] top-[17%] -translate[50%] w-[35%]  table-cell align-middle max-h-[90%]">
@@ -44,8 +46,9 @@ const Contact = () => {
           />
         </h1>
         <p>
-          I'm a Front End Developer based in Kathmandu, Nepal. I help businesses
-          bring their ideas to life through my design and development expertise.
+          I am available for hire and open to any ideas of cooperation. Fill up
+          the awesome form below or send an email to sushant07.dhimal@gmail.com
+          and ~let's talk.
         </p>
         {/* form section */}
         <div className="contactForm">
@@ -102,9 +105,12 @@ const Contact = () => {
       </div>
       {/* map container */}
       <div className="mapContainer">
-        <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <Marker position={[44.96366, 19.61045]}>
+        <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
             <Popup>Sushant lives here, come over for a cup of coffee :)</Popup>
           </Marker>
         </MapContainer>

@@ -1,8 +1,10 @@
 .logo-container {
-  z-index: 0;
+  z-index: 1;
   width: 400px;
   height: 609px;
   opacity: 0;
+  animation: backInRight 3s 1.5s;
+  animation-fill-mode: forwards;
   position: absolute;
   top: 0;
   right: 15%;
@@ -25,12 +27,7 @@
   left: 0;
   margin: auto;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transform: rotateZ(30deg) !important;
   z-index: 1;
-}
-
-.logo-container .svg-container {
-  stroke: #ffd700;
-  stroke-width: 10;
 }
