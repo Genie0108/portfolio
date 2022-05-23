@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
@@ -33,7 +34,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="contactPage">
+    <div className="container contactPage">
       <div className="absolute left-[10%] top-[17%] -translate[50%] w-[35%]  table-cell align-middle max-h-[90%]">
         <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
           <AnimatedLetters
@@ -87,6 +88,26 @@ const Contact = () => {
             </ul>
           </form>
         </div>
+      </div>
+      {/* map section */}
+      <div className="infoMap">
+        Sushant Dhimal,
+        <br />
+        Chabahil <br />
+        Kathmandu, Nepal <br />
+        <br />
+        <h6>
+          <span>@:</span> sushant07.dhimal@gmail.com
+        </h6>
+      </div>
+      {/* map container */}
+      <div className="mapContainer">
+        <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={[44.96366, 19.61045]}>
+            <Popup>Sushant lives here, come over for a cup of coffee :)</Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   );

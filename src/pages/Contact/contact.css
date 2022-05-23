@@ -19,7 +19,7 @@
   opacity: 0.8;
   line-height: 20px;
 }
-.contactPage p {
+.contactPage p:first-of-type {
   margin-top: 10px;
   color: #fff;
   font-size: 17px;
@@ -27,7 +27,7 @@
   line-height: 24px;
   min-width: fit-content;
   font-family: "sans-serif";
-  animation: fadeIn 6.5s;
+  animation: fadeInLeft 4s;
 }
 .contactForm {
   width: 100%;
@@ -105,4 +105,48 @@ input[type="email"] {
   background: #115173;
   border-color: #115173;
   font-weight: 400;
+}
+
+.infoMap {
+  position: absolute;
+  background-color: #000;
+  top: 50px;
+  right: 30%;
+  width: 280px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Helvetica";
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 3s;
+  animation-fill-mode: forwards;
+}
+
+.infoMap h6 {
+  font-family: "Helvetica";
+  font-size: 16px;
+}
+.infoMap span {
+  color: var(--c-secondary);
+  font-family: "Helvetica";
+  font-size: 16px;
+  font-weight: 600;
+}
+/* styles for map */
+.mapContainer {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 115%;
+  margin-top: -3%;
+}
+
+.leaflet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
 }
