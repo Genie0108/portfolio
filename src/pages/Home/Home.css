@@ -15,7 +15,7 @@
   font-size: 22px;
   position: absolute;
   margin-top: 18px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
@@ -53,4 +53,8 @@
 .flatButton:hover {
   background: var(--c-secondary);
   color: var(--c-textColor);
+}
+.menuButtons {
+  animation: bounceInLeft 1.5s;
+  animation-fill-mode: backwards;
 }

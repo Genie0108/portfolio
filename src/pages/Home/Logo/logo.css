@@ -1,15 +1,15 @@
 .logo-container {
   z-index: 1;
-  width: 400px;
+  /* width: 400px; */
   height: 609px;
   opacity: 0;
   animation: backInRight 3s 1.5s;
   animation-fill-mode: forwards;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 15%;
   bottom: 0;
-  left: auto;
+  left: auto; */
   margin: auto;
 }
 .logo-container svg {
@@ -30,4 +30,5 @@
   opacity: 1;
   transform: rotateZ(30deg) !important;
   z-index: 1;
+  filter: sepia(1);
 }

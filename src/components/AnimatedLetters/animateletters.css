@@ -14,7 +14,7 @@
 }
 .textAnimateHover:hover {
   animation: rubberBand 1s;
-  color: var(--c-secondary);
+  color: var(--c-secondary) !important;
 }
 .textAnimate._1 {
   animation-delay: 0.1s;

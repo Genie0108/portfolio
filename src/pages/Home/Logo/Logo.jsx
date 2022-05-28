@@ -3,7 +3,7 @@ import "./logo.css";
 
 const Logo = () => {
   return (
-    <div className="logo-container">
+    <div className="logo-container w-72 sm:w-[400px] hidden md:block absolute top-0 md:top-24 lg:top-0 right-[10%] left-auto">
       <img className="solid-logo" src={LogoS} alt="JavaScript,  Developer" />
 
       <svg

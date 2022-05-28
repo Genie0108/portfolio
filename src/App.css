@@ -21,7 +21,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  overflow: hidden;
+}
 input,
 textarea {
   font-family: "Helvetica Neue", sans-serif;

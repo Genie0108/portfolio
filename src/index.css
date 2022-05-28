@@ -17,18 +17,29 @@ body {
   display: block;
 }
 
-:root {
+/* :root {
   --c-primary: #022c43;
   --c-secondary: #ffd700;
   --c-sidebar: #181818;
   --c-icon: #4d4d4e;
   --c-textColor: #444;
   --c-lightGrey: #8d8d8d;
-}
-/* :root {
-  --c-primary: #ebd877;
-  --c-secondary: #ac4b1c;
-  --c-sidebar: #f39d48;
-  --c-icon: #fcd88f;
-  --c-textColor: #444;
 } */
+:root {
+  --c-primary: #212121;
+  --c-secondary: #05c7b8;
+  --c-sidebar: #211d1d;
+  --c-icon: #0b6480cc;
+  --c-textColor: #444;
+  --c-lightGrey: #8d8d8d;
+}
+/*
+:root{
+    --c-primary: #222831;
+    --c-secondary: #00ADB5;
+    --c-sidebar: #393E46;
+    --c-icon: #EEEEEE;
+    --c-textColor: #00ADB;
+    --c-lightGrey: #00ADB5; 
+};
+ */

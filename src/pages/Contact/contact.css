@@ -65,7 +65,7 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   border: 0;
-  background: #115173;
+  background: #113a50;
   height: 50px;
   font-size: 16px;
   color: #fff;
@@ -76,7 +76,7 @@ input[type="email"] {
 .contactForm textarea {
   width: 100%;
   border: 0;
-  background: #115173;
+  background: #113a50;
   height: 50px;
   font-size: 16px;
   color: #fff;
@@ -86,12 +86,12 @@ input[type="email"] {
 }
 
 .contactForm .flatButton {
-  color: #ffd700;
+  color: #fff;
   font-size: 11px;
   letter-spacing: 3px;
   text-decoration: none;
   padding: 10px 12px;
-  border: 1px solid #ffd700;
+  border: 1px solid #113a50;
   float: left;
   border-radius: 4px;
   background: 0 0;
@@ -102,8 +102,8 @@ input[type="email"] {
 }
 .contactForm .flatButton:hover {
   cursor: pointer;
-  background: #115173;
-  border-color: #115173;
+  background: #113a50;
+  border-color: #113a50;
   font-weight: 400;
 }
 
