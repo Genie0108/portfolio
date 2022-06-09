@@ -43,7 +43,7 @@
 .textAnimateHover:hover {
   color: #fff;
 }
-.cubeContainer {
+/* .cubeContainer {
   width: 50%;
   height: 100%;
   padding-top: 15%;
@@ -52,7 +52,7 @@
   top: 0;
   right: 0;
   overflow: hidden;
-}
+} */
 
 .cubeSpinner {
   animation-name: spincube;

@@ -8,15 +8,15 @@ const Layout = () => {
     <div>
       <Sidebar />
       <div className="absolute w-full h-full">
-        <span className="top-16 text-secondary opacity-90 absolute bottom-0 left-7 sm:left-40 text-3xl font-laBelle">
+        {/* <span className="top-16 text-secondary opacity-90 absolute bottom-0 left-7 sm:left-40 text-3xl font-laBelle">
           &lt;body&gt;
-        </span>
+        </span> */}
         <Outlet />
-        <span className="text-secondary opacity-90 absolute bottom-28 sm:bottom-28 left-7 sm:left-40 text-3xl font-laBelle">
+        {/* <span className="text-secondary opacity-90 absolute bottom-1 sm:bottom-20 left-7 sm:left-40 text-3xl font-laBelle">
           &lt;/body&gt;
           <br />
           <span className="-ml-6 mt-2">&lt;/html&gt;</span>
-        </span>
+        </span> */}
       </div>
     </div>
   );

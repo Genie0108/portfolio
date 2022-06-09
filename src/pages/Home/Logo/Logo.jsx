@@ -3,8 +3,12 @@ import "./logo.css";
 
 const Logo = () => {
   return (
-    <div className="logo-container w-72 sm:w-[400px] hidden md:block absolute top-0 md:top-24 lg:top-0 right-[10%] left-auto">
-      <img className="solid-logo" src={LogoS} alt="JavaScript,  Developer" />
+    <div className="logo-container h-[609px] md:w-[55%] lg:w-[400px] hidden md:block absolute top-0 md:top-24 lg:top-0 right-[13%] lg:right-[10%] left-auto mx-auto z-10">
+      <img
+        className="solid-logo absolute top-auto right-auto bottom-auto left-0 mx-auto w-full opacity-100 sepia"
+        src={LogoS}
+        alt="JavaScript,  Developer"
+      />
 
       <svg
         width="559pt"

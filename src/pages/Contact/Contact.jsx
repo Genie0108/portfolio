@@ -36,8 +36,8 @@ const Contact = () => {
   // latitude and longitude of Chabahil
   const position = [27.7166, 85.345];
   return (
-    <div className="container contactPage">
-      <div className="absolute left-[10%] top-[17%] -translate[50%] w-[35%]  table-cell align-middle max-h-[90%]">
+    <div className="container contactPage flex flex-col items-center justify-center gap-16 lg:block">
+      <div className="lg:absolute left-[10%] top-[17%] -translate[50%] w-[80%] lg:w-[35%]  table-cell align-middle max-h-[80%]">
         <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
           <AnimatedLetters
             letterClass={letterClass}
@@ -83,6 +83,7 @@ const Contact = () => {
                   placeholder="Message"
                   name="message"
                   required
+                  className="w-full border-0 min-h-[90px] md:min-h-[150px] h-12 text-white p-5 box-border "
                 ></textarea>
               </li>
               <li>
@@ -93,18 +94,19 @@ const Contact = () => {
         </div>
       </div>
       {/* map section */}
-      <div className="infoMap">
-        Sushant Dhimal,
-        <br />
-        Chabahil <br />
-        Kathmandu, Nepal <br />
-        <br />
-        <h6>
-          <span>@:</span> sushant07.dhimal@gmail.com
-        </h6>
-      </div>
+
       {/* map container */}
-      <div className="mapContainer">
+      <div className="mapContainer relative w-[80%] lg:w-[53%]">
+        <div className="hidden md:block infoMap absolute bottom-1 left-2 lg:top-36 lg:right-5 h-max">
+          Sushant Dhimal,
+          <br />
+          Chabahil <br />
+          Kathmandu, Nepal <br />
+          <br />
+          <h6>
+            <span>@:</span> sushant07.dhimal@gmail.com
+          </h6>
+        </div>
         <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

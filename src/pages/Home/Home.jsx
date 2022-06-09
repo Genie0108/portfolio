@@ -31,7 +31,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div className="homePage absolute left-[7%] md:left-[10%] top-[50%] sm:top-[44%] md:top-[45%] lg:top-[50%] -translate-y-[50%] w-100% md:w-[40%] max-h-[90%] z-10">
+      <div className="homePage absolute left-[7%] md:left-[10%] top-[50%] sm:top-[44%] md:top-[42%] lg:top-[50%] -translate-y-[50%] w-100% md:w-[45%] max-h-[90%] z-50">
         <h1 className="text-white text-[48px] md:text-[56px] leading-[48px] md:leading-[53px] m-0 font-coolvetica font-normal after:ml-[2px] md:after:ml-[20px]">
           <span className={letterClass}>H</span>
           <span className={`${letterClass} _12`}>i</span>

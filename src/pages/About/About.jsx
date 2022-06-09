@@ -19,9 +19,9 @@ const About = () => {
     }, 3000);
   }, []);
   return (
-    <div className="aboutPage">
+    <div className="aboutPage container sm:pl-8 sm:pr-8">
       {/* details section */}
-      <div className="absolute left-[10%] top-[30%] -translate[50%] w-[35%]  table-cell align-middle max-h-[90%]">
+      <div className="w-[35%] max-h-[90%] lg:absolute top-[17%] left-[10%] table-cell align-middle pl-10 pr-10">
         <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
           <AniamtedLetters
             letterClass={letterClass}
@@ -48,7 +48,7 @@ const About = () => {
       </div>
       <div>
         {/* cube section */}
-        <div className="cubeContainer">
+        <div className="cubeContainer ml-0 absolute top-[40%] right-[3%] w-full pt-72 h-[84%] overflow-hidden xs:pt-40 xs:h-[60%] sm:pt-14 lg:w-[50%] lg:h-full lg:pt-[15%] lg:top-0 lg:right-0">
           <div className="cubeSpinner">
             <div className="face1">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

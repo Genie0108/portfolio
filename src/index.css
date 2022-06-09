@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--c-primary);
-  overflow: hidden;
+  /* overflow: hidden; */
   display: block;
 }
 
