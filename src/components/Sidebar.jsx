@@ -13,6 +13,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+
 const Sidebar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -168,6 +169,48 @@ const Sidebar = () => {
               className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
             />
           </NavLink>
+          {/* social accounts */}
+          <ul className="flex lg:flex-col items-center gap-x-12 lg:gap-y-8 absolute lg:bottom-16 right-14 lg:right-8">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sushant-dhimal-809456202/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="text-icon hover:text-secondary"
+                  size="2x"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dhiant"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="text-icon hover:text-secondary"
+                  size="2x"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/shant_dhi/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="text-icon hover:text-secondary"
+                  size="2x"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </header>

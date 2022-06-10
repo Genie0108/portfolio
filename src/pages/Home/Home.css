@@ -54,7 +54,7 @@
   background: var(--c-secondary);
   color: var(--c-textColor);
 }
-.menuButtons {
+/* .menuButtons {
   animation: bounceInLeft 1.5s;
   animation-fill-mode: backwards;
-}
+} */
