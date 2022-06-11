@@ -1,0 +1,32 @@
+.skillsPage h1::before {
+  content: "<h1>";
+  font-family: "La Belle Aurore";
+  font-size: 20px;
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  opacity: 0.8;
+  line-height: 18px;
+}
+.skillsPage h1::after {
+  content: "</h1>";
+  font-family: "La Belle Aurore";
+  font-size: 20px;
+  position: absolute;
+  left: -30px;
+  bottom: -40px;
+  margin-left: 20px;
+  opacity: 0.8;
+  line-height: 18px;
+}
+.skillsPage h2 {
+  color: var(--c-lightGrey);
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+.skillsPage ul li {
+  padding-top: 10px;
+}

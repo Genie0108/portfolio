@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Layout from "./pages/Layout/Layout";
+import Skills from "./pages/skills/Skills";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="skills" element={<Skills />} />
         </Route>
       </Routes>
     </Router>

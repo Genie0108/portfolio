@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faHome,
   faUser,
+  faGear,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
@@ -70,6 +71,20 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon
             icon={faEnvelope}
+            size="2x"
+            className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+          />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="selected"
+          to="/skills"
+          style={({ isActive }) => ({
+            color: isActive ? "var(--c-secondary)" : "var(--c-icon)",
+          })}
+        >
+          <FontAwesomeIcon
+            icon={faGear}
             size="2x"
             className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
           />
