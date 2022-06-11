@@ -184,6 +184,20 @@ const Sidebar = () => {
               className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
             />
           </NavLink>
+          <NavLink
+            exact="true"
+            activeclassname="selected"
+            to="/skills"
+            style={({ isActive }) => ({
+              color: isActive ? "var(--c-secondary)" : "var(--c-icon)",
+            })}
+          >
+            <FontAwesomeIcon
+              icon={faGear}
+              size="2x"
+              className="fill-current hover:text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+            />
+          </NavLink>
           {/* social accounts */}
           <ul className="flex lg:flex-col items-center gap-x-12 lg:gap-y-8 absolute lg:bottom-16 right-14 lg:right-8">
             <li>
