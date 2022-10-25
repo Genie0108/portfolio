@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className="aboutPage container sm:pl-8 sm:pr-8">
       {/* details section */}
-      <div className="w-[35%] max-h-[90%] lg:absolute top-[17%] left-[10%] table-cell align-middle pl-10 pr-10">
+      <div className="xl:w-1/2 max-h-[90%] lg:absolute top-[17%] left-[10%] table-cell align-middle pl-10 pr-10">
         <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
           <AniamtedLetters
             letterClass={letterClass}
@@ -37,8 +37,8 @@ const About = () => {
           </p>
           <p>
             Well-organised person, problem solver, independent employee with
-            high attention to detail.Fan of MCU, outdoor activities, and English
-            series.
+            high attention to detail. Fan of MCU, outdoor activities, and nature
+            enthusiasts.
           </p>
           <p>
             Interested in the frontend spectrum and working on ambitious
@@ -46,9 +46,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="xl:w-1/2 absolute top-[40%] right-[3%] w-full pt-96 h-[84%] xs:pt-40 xs:h-[60%] sm:h-0 sm:pt-0 sm:fixed sm:right-0 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 xl:absolute xl:top-[20%] xl:translate-x-[0%] xl:-translate-y-1/3">
         {/* cube section */}
-        <div className="cubeContainer ml-0 absolute top-[40%] right-[3%] w-full pt-72 h-[84%] overflow-hidden xs:pt-40 xs:h-[60%] sm:pt-14 lg:w-[50%] lg:h-full lg:pt-[15%] lg:top-0 lg:right-0">
+        <div className="cubeContainer">
           <div className="cubeSpinner">
             <div className="face1">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
