@@ -42,13 +42,13 @@
   margin: 0;
   list-style: none;
   margin-bottom: 10px;
-  opacity: 0;
+  /* opacity: 0; */
   overflow: hidden;
   display: block;
   clear: both;
   position: relative;
-  animation: fadeInUp 2s 2s;
-  animation-fill-mode: forwards;
+  /* animation: fadeInUp 1.5s 1.5s; */
+  /* animation-fill-mode: forwards; */
 }
 
 .contactForm li.half {
@@ -119,9 +119,9 @@ input[type="email"] {
   font-family: Helvetica;
   font-size: 17px;
   font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 3s;
-  animation-fill-mode: forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s 3s; */
+  /* animation-fill-mode: forwards; */
   z-index: 9999;
 }
 
@@ -140,17 +140,17 @@ input[type="email"] {
   /* background: rgba(8, 253, 216, 0.1); */
   float: right;
   /* width: 53%; */
-  height: 115%;
-  margin-top: -3%;
+  height: 100%;
 }
 
 .leaflet-container {
   position: relative;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  animation: backInRight 3s 1.2s;
-  animation-fill-mode: forwards;
+  min-height: 400px;
+  /* opacity: 0; */
+  /* animation: backInRight 3s 1.2s; */
+  /* animation-fill-mode: forwards; */
 }
 .leaflet-popup-content {
   color: #000;
@@ -158,4 +158,10 @@ input[type="email"] {
   font-size: 16px;
   font-weight: 400;
   font-family: Helvetica;
+}
+
+@media only screen and (min-width: 1280px) {
+  .leaflet-container {
+    min-height: 80vh;
+  }
 }

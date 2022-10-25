@@ -50,10 +50,10 @@ const Contact = () => {
   return (
     <>
       <div
-        className="container contactPage flex flex-col items-center justify-center gap-16 lg:block"
+        className="container contactPage flex flex-col items-center justify-center gap-16 xl:block"
         ref={containerRef}
       >
-        <div className="lg:absolute left-[10%] top-[17%] -translate[50%] w-[80%] lg:w-[35%]  table-cell align-middle max-h-[80%]">
+        <div className="xl:absolute left-[10%] top-[17%] -translate[50%] w-[80%] xl:w-[35%]  table-cell align-middle max-h-[80%]">
           <h1 className="text-7xl leading-7 font-coolvetica text-secondary font-normal mt-0 relative mb-20 left-3">
             <AnimatedLetters
               letterClass={letterClass}
@@ -112,8 +112,8 @@ const Contact = () => {
         {/* map section */}
 
         {/* map container */}
-        <div className="mapContainer relative w-[80%] lg:w-[53%]">
-          <div className="hidden md:block infoMap absolute bottom-1 left-2 lg:top-36 lg:right-5 h-max">
+        <div className="mapContainer relative w-[80%] xl:w-[53%]">
+          <div className="hidden md:block infoMap absolute bottom-1 left-2 xl:top-36 lg:right-5 h-max">
             Sushant Dhimal,
             <br />
             Chabahil <br />

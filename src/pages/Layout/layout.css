@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   will-change: contents;
-  height: 90%;
   min-height: 566px;
   position: absolute;
   opacity: 0;
@@ -12,4 +11,10 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
   max-width: 1536px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    height: 90%;
+  }
 }
