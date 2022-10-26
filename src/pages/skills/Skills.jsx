@@ -9,7 +9,6 @@ import {
   faHtml5,
   faJs,
   faReact,
-  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
@@ -30,9 +29,9 @@ const Skills = () => {
           />
         </h1>
         {/* skills sections*/}
-        <div className="flex flex-col md:flex-row gap-y-20 ">
+        <div className="flex flex-col xl:flex-row gap-y-20">
           {/* names */}
-          <div className="w-full mt-10 pb-16 lg:w-[50%]">
+          <div className="w-full mt-10 pb-16 xl:w-[50%]">
             <h3 className="text-white text-5xl font-sans font-medium">
               Frontend
             </h3>
@@ -44,9 +43,9 @@ const Skills = () => {
                 <li>Javascript</li>
               </ul>
               <ul className="text-lightGrey text-2xl w-1/2">
-                <li>Sass</li>
-                <li>Tailwind</li>
                 <li>React</li>
+                <li>Material UI</li>
+                <li>Tailwind CSS</li>
               </ul>
             </div>
             {/* others */}
@@ -66,24 +65,72 @@ const Skills = () => {
           </div>
 
           {/* logos */}
-          <div className=" flex flex-wrap gap-x-24 gap-y-14 w-full items-center justify-start mx-auto md:pl-10 md:gap-y-0  lg:w-[50%] lg:gap-x-36 xl:gap-x-52">
+          <div className="max-w-[720px] xl:max-w-[590px] w-full  xl:mx-auto xl:w-[50%] flex flex-wrap items-center justify-between gap-x-20 gap-y-36 xs:gap-x-40 sm:gap-x-72 xl:gap-x-52">
             <FontAwesomeIcon
               title="HTML"
               icon={faHtml5}
-              size="6x"
-              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+              // size="5x"
+              className="text-[5.4em] fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+            />
+            <FontAwesomeIcon
+              title="React"
+              icon={faReact}
+              // size="5x"
+              className="text-[5em] fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+            />
+            <FontAwesomeIcon
+              title="Git"
+              icon={faGitAlt}
+              // size="5x"
+              className="text-[5.5em] fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
             />
             <FontAwesomeIcon
               title="CSS"
               icon={faCss3}
+              size="4x"
+              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+            />
+
+            <div className="">
+              <svg
+                viewBox="0 0 600 476.30000000000007"
+                stroke="currentColor"
+                fill="#05c7b8"
+                strokeWidth="0"
+                height="2em"
+                // width="5em"
+                xmlns="http://www.w3.org/2000/svg"
+                title="Material UI"
+                color="text-secondary"
+                className="text-[2em] transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+              >
+                <title>Material UI</title>
+                <path
+                  d="M0 259.8V0l225 129.9v86.6L75 129.9v173.2z"
+                  fill="#05c7b8"
+                />
+                <path
+                  d="M225 129.9L450 0v259.8l-150 86.6-75-43.3 150-86.6v-86.6l-150 86.6z"
+                  fill="#05c7b8"
+                />
+                <path d="M225 303.1v86.6l150 86.6v-86.6z" fill="#05c7b8" />
+                <path
+                  d="M375 476.3l225-129.9V173.2l-75 43.3v86.6l-150 86.6zm150-346.4V43.3L600 0v86.6z"
+                  fill="#05c7b8"
+                />
+              </svg>
+            </div>
+            <FontAwesomeIcon
+              title="Github"
+              icon={faGithub}
               size="5x"
               className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
             />
             <FontAwesomeIcon
               title="Javascript"
               icon={faJs}
-              size="5x"
-              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
+              // size="5x"
+              className="text-[4.6em] fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
             />
             <div className="">
               <svg
@@ -91,8 +138,8 @@ const Skills = () => {
                 fill="#05c7b8"
                 strokeWidth="0"
                 viewBox="0 0 1000 1000"
-                height="6em"
-                width="6em"
+                height="5em"
+                width="5em"
                 xmlns="http://www.w3.org/2000/svg"
                 title="Tailwind CSS"
                 color="text-secondary"
@@ -109,30 +156,13 @@ const Skills = () => {
                 />
               </svg>
             </div>
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               title="Sass"
               icon={faSass}
               size="4x"
               className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
-            />
-            <FontAwesomeIcon
-              title="React"
-              icon={faReact}
-              size="5x"
-              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
-            />
-            <FontAwesomeIcon
-              title="Git"
-              icon={faGitAlt}
-              size="5x"
-              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
-            />
-            <FontAwesomeIcon
-              title="Github"
-              icon={faGithub}
-              size="5x"
-              className="fill-current text-secondary transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
-            />
+            /> */}
+
             <div className="">
               <svg
                 stroke="currentColor"
@@ -140,11 +170,10 @@ const Skills = () => {
                 strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                height="6em"
-                width="6em"
+                height="5em"
+                width="5em"
                 xmlns="http://www.w3.org/2000/svg"
                 color="text-secondary"
-                size="5x"
                 className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-150 duration-300"
               >
                 <title>VS Code</title>
