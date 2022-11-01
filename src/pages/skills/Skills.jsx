@@ -29,7 +29,7 @@ const Skills = () => {
           />
         </h1>
         {/* skills sections*/}
-        <div className="flex flex-col xl:flex-row gap-y-20">
+        <div className="flex flex-col xl:flex-row gap-y-20 pb-16">
           {/* names */}
           <div className="w-full mt-10 pb-16 xl:w-[50%]">
             <h3 className="text-white text-5xl font-sans font-medium">

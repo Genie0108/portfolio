@@ -13,9 +13,11 @@ module.exports = {
       colors: {
         primary: "var(--c-primary)",
         secondary: "var(--c-secondary)",
+        secondaryLight: "var(--c-secondaryLight)",
         sidebar: "var(--c-sidebar)",
         icon: "var(--c-icon)",
-        textColor: "var(----c-textColor)",
+        textColor: "var(--c-textColor)",
+        textColorDark: "var(--c-textColorDark)",
         lightGrey: "var(--c-lightGrey)",
       },
       fontFamily: {

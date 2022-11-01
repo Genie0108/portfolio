@@ -28,9 +28,11 @@ body {
 :root {
   --c-primary: #212121;
   --c-secondary: #05c7b8;
+  --c-secondaryLight: #1ed1c3;
   --c-sidebar: #211d1d;
   --c-icon: #0b6480cc;
   --c-textColor: #444;
+  --c-textColorDark: #282525;
   --c-lightGrey: #8d8d8d;
 }
 /*
