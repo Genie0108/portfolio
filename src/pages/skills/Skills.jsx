@@ -65,7 +65,7 @@ const Skills = () => {
           </div>
 
           {/* logos */}
-          <div className="max-w-[720px] xl:max-w-[590px] w-full  xl:mx-auto xl:w-[50%] flex flex-wrap items-center justify-between gap-x-20 gap-y-36 xs:gap-x-40 sm:gap-x-72 xl:gap-x-52">
+          <div className="sm:w-[42rem] flex justify-between gap-[6rem] sm:gap-[8rem] flex-wrap">
             <FontAwesomeIcon
               title="HTML"
               icon={faHtml5}

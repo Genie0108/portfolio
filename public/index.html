@@ -33,6 +33,21 @@
     z-index: 999;
     font-size: 12px;
   }
+
+  .close-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+
+  .close-icon:hover {
+    text-decoration: underline;
+    font-size: 25px;
+
+  }
 </style>
 
 <body>
@@ -50,13 +65,16 @@
     window.onload = function () {
       var displayBox = document.createElement("div");
       displayBox.className = "display-box";
-      displayBox.innerHTML = "<p>Welcome to my portfolio website! Please note that this site is still under some improvements. I am constantly working to enhance the site and add new content, so please check back later for updates.Thank you for your patience!</p>";
+      displayBox.innerHTML = "<p>Welcome to my portfolio website! Please note that this site is still under some improvements. I am constantly working to enhance the site and add new content, so please check back later for updates.Thank you for your patience!</p><span class=close-icon onclick=closeDisplay()>x</span>";
       document.body.appendChild(displayBox);
       setTimeout(function () {
         displayBox.style.display = "none";
       }, 10000);
     };
-
+    function closeDisplay() {
+      var displayBox = document.querySelector(".display-box");
+      displayBox.style.display = "none";
+    }
   </script>
 </body>
 
