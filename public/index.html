@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-    <!-- react leaflet for map-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-      crossorigin=""
-    />
-  </head>
-  <script>
-    function display() {
-      alert("Site is still under the construction...");
-    }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Sushant Dhimal's portfolio website" />
+  <meta name="keywords" content="Portfolio, Sushant Dhimal, Web developer, React Developer, Front-end Developer" />
+  <meta name="author" content="Sushant Dhimal" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- react leaflet for map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <title>Sushant Dhimal | Learner | React Developer</title>
+</head>
+<style>
+  .display-box {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 300px;
+    z-index: 999;
+    font-size: 12px;
+  }
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- emailJS library -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init("y6lX7l8pdLAkPqMy_");
+    })();
   </script>
-  <body onLoad="display()">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!-- emailJS library -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init("y6lX7l8pdLAkPqMy_");
-      })();
-    </script>
-  </body>
+  <script>
+    window.onload = function () {
+      var displayBox = document.createElement("div");
+      displayBox.className = "display-box";
+      displayBox.innerHTML = "<p>Welcome to my portfolio website! Please note that this site is still under some improvements. I am constantly working to enhance the site and add new content, so please check back later for updates.Thank you for your patience!</p>";
+      document.body.appendChild(displayBox);
+      setTimeout(function () {
+        displayBox.style.display = "none";
+      }, 10000);
+    };
+
+  </script>
+</body>
+
 </html>
